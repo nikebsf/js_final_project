@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/extras.css">
+    <link rel="stylesheet" href="fafacss/all.min.css">
+    <script src="https://kit.fontawesome.com/eac7512620.js" crossorigin="anonymous"></script>
+    <script src="/js/extras.js"></script>
+    <script src="/js/main.js"></script>
+
+
+
+
+    <title>ATTC : Bulk Inquiry</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-bar sticky">
+                <div class="nav-logo">
+                    <h1>ATTC Logistics</h1>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="bulkinquiry.html" class="nav-link active">Bulk Inquiry</a>
+                        </li>
+                        <li>
+                            <a href="trucktype.html" class="nav-link">Truck Type</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <hr>
+        <main>
+
+            <!--          bulkinquiry form modal-->
+
+            <div id="bifModal" class="bif-modal">
+
+                <!-- Modal content -->
+                <div class="modal-form">
+                    <span class="close">&times;</span>
+                    <div>
+                        <h3>your entered details are as below at <span id="ctime" style="font-style: italic"></span></h3>
+
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Name: </th>
+                            <td id="modalName"></td>
+                        </tr>
+                        <tr>
+                            <th>Company Name: </th>
+                            <td id="modalCname"></td>
+                        </tr>
+                        <tr>
+                            <th>Contact: </th>
+                            <td id="modalContact"></td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td id="modalEmail"></td>
+                        </tr>
+                        <tr>
+                            <th>Goods type: </th>
+                            <td id="modalGtype"></td>
+                        </tr>
+                        <tr>
+                            <th>Location: </th>
+                            <td id="modalLocation"></td>
+                        </tr>
+                        <tr>
+                            <th>Message: </th>
+                            <td id="modalMessage"></td>
+                        </tr>
+                    </table>
+
+
+                    <h4>We will contact you soon.</h4>
+
+
+
+
+                </div>
+
+            </div>
+            <!--main contents-->
+            <h6>Home/ Bulk Inquiry</h6>
+            <div class="bulkinquiry-form">
+
+                <p>Please fill out this form below and we will contact you ASAP for your bulk inquiry.</p>
+                <div class="bif-body">
+                    <form id="bif-form">
+                        <h6 id="required">* please fill required fields.</h6>
+                        <input type="text" placeholder="Name" id="bif-name" required>
+                        <input type="tel" placeholder="Contact number" id="bif-contact" required>
+                        <input type="email" placeholder="Email" id="bif-email" required>
+                        <input type="text" placeholder="Company name" id="bif-cname" required>
+                        <input type="text" placeholder="Goods type" id="bif-gtype" required>
+                        <input type="text" placeholder="location" id="bif-location">
+                        <textarea name="" id="bif-comments" cols="50" rows="6" placeholder="Special Requirements if any"></textarea>
+                        <div id="bif-btn"> <button id="bif-btnbody" type="submit">Get Quatation</button>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div class="footer-up">
+                <div class="fup-1">
+                    <h3>ABOUT OUR COMPANY</h3>
+                    <p>We are leading transport and logistics service provider, introducing a truly innovative, modern and high-tech online platform to book a truck in simple steps.</p>
+                </div>
+                <div class="fup-2">
+                    <h3>Quick Links</h3>
+                    <ul class="quicklinks">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="bulkinquiry.html">Bulk Inquiry</a>
+                        </li>
+                        <li>
+                            <a href="trucktype.html">Truck Type</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fup-3">
+                    <h3>Our Services</h3>
+                    <ul class="quicklinks">
+                        <li>Online Truck Booking</li>
+                        <li>Logistics Services</li>
+                        <li>Transportation Services</li>
+                        <li>Packers & Movers</li>
+                        <li>Express Cargo Services</li>
+                        <li>Freight Forwarding</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <button class="open-button" id="btnopen"><i class="fas fa-inbox"></i></button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <div class="va-header">
+                <h6>
+                    <center>please fill out this form, we will contact you soon.</center>
+                </h6>
+            </div>
+            <div class="va-body">
+                <label for="contactname"><b>Name:</b></label>
+                <input type="text" placeholder="Enter your name" name="contactname" required>
+
+                <label for="companyname"><b>Company name:</b></label>
+                <input type="text" placeholder="your company name" name="companyname" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <!--
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+-->
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" id="btnclose">Close</button>
+            </div>
+
+
+        </form>
+    </div>
+    <div class="spinner-border text-success" role="status" id="loading">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+</body>
+
+</html>

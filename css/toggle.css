@@ -1,0 +1,16 @@
+.faq li { padding: 20px;
+list-style-type: none;}
+
+.faq li.q {
+
+  font-weight: bold;
+  font-size: 120%;
+  border-bottom: 1px #ddd solid;
+  cursor: pointer;
+}
+
+.faq li.a {
+  background-color: skyblue;
+  display: none;
+  color:#fff;
+}

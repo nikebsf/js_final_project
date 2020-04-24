@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/extras.css">
+    <script src="/js/extras.js"></script>
+    <script src="/js/main.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <link rel="stylesheet" href="fafacss/all.min.css">
+    <script src="https://kit.fontawesome.com/eac7512620.js" crossorigin="anonymous"></script>
+
+
+
+
+    <title>ATTC : Contact</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-bar sticky">
+                <div class="nav-logo">
+                    <h1>ATTC Logistics</h1>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="bulkinquiry.html" class="nav-link">Bulk Inquiry</a>
+                        </li>
+                        <li>
+                            <a href="trucktype.html" class="nav-link">Truck Type</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <hr>
+        <main>
+            <h6>Home/ Contact</h6>
+
+            <div id="contact-form">
+               <div class="cform">
+                   <form class="cf-1">
+                    <h3>Get in Touch</h3>
+                    <input type="text" placeholder="Name" class="cfreq" required>
+                    <input type="number" placeholder="Phone no." class="cfreq" required>
+                    <input type="email" placeholder="Email" class="cfreq" required>
+                    <textarea name="" cols="30" rows="10" class="cfreq" placeholder="Message"></textarea>
+                    <div id="bif-btn"> <button id="sendM" class="cfreq" type="submit">Send Message</button></div>
+                </form>
+                <div class="cf-2">
+                   <div id="address">
+                       <h3>Registered Office</h3>
+                    <p>299 Doon Valley Drive <br>
+                        Kitchener, ON N2G 4M4 <br>
+                        519-748-5220</p>
+                   </div>
+                   <div id="map" style="width: 500px; height: 440px; border: 1px solid #AAA;"></div>
+                    
+                </div>
+               </div>
+                
+                <!--                ------------------------------->
+                
+
+                <script>
+                    
+                    /*43.3895672,-80.4073635,17*/
+                    var mylat = '43.3895672';
+                    var mylong = '-80.4073635';
+                    var myzoom = '17';
+                    var map = L.map('map').setView([mylat, mylong], myzoom);
+                    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 17,
+                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+
+
+
+                  /*  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                        maxZoom: 18,
+                        id: 'mapbox/streets-v11',
+                        tileSize: 512,
+                        zoomOffset: -1,
+                        accessToken: 'your.mapbox.access.token'
+                    }).addTo(mymap);*/
+
+                </script>
+
+
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div class="footer-up">
+                <div class="fup-1">
+                    <h3>ABOUT OUR COMPANY</h3>
+                    <p>We are leading transport and logistics service provider, introducing a truly innovative, modern and high-tech online platform to book a truck in simple steps.</p>
+                </div>
+                <div class="fup-2">
+                    <h3>Quick Links</h3>
+                    <ul class="quicklinks">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="bulkinquiry.html">Bulk Inquiry</a>
+                        </li>
+                        <li>
+                            <a href="trucktype.html">Truck Type</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fup-3">
+                    <h3>Our Services</h3>
+                    <ul class="quicklinks">
+                        <li>Online Truck Booking</li>
+                        <li>Logistics Services</li>
+                        <li>Transportation Services</li>
+                        <li>Packers & Movers</li>
+                        <li>Express Cargo Services</li>
+                        <li>Freight Forwarding</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button class="open-button" id="btnopen"><i class="fas fa-inbox"></i></button>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <div class="va-header">
+                <h6>
+                    <center>please fill out this form, we will contact you soon.</center>
+                </h6>
+            </div>
+            <div class="va-body">
+                <label for="contactname"><b>Name:</b></label>
+                <input type="text" placeholder="Enter your name" name="contactname" required>
+
+                <label for="companyname"><b>Company name:</b></label>
+                <input type="text" placeholder="your company name" name="companyname" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+                <!--
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+-->
+
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" id="btnclose">Close</button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

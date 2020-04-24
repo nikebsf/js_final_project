@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/extras.css">
+    <link rel="stylesheet" href="fafacss/all.min.css">
+    <script src="https://kit.fontawesome.com/eac7512620.js" crossorigin="anonymous"></script>
+    <script src="/js/extras.js"></script>
+    <script src="/js/main.js"></script>
+
+
+
+
+    <title>ATTC : Home</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="nav-bar sticky">
+                <div class="nav-logo">
+                    <h1>ATTC Logistics</h1>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="nav-link active">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                            class="nav-link">About</a>
+                        </li>
+                        <li>
+                            <a href="bulkinquiry.html" class="nav-link">Bulk Inquiry</a>
+                        </li>
+                        <li>
+                            <a href="trucktype.html" class="nav-link">Truck Type</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <hr>
+        <main>
+           
+            <!-- modal code here--------------------------------------------------- -->
+            <div id="homeModal" class="hmModal">
+
+                <!-- Modal content -->
+                <div class="hmform">
+                    <span class="hm-close">&times;</span>
+                    <div>
+                        <h3>Subscribe to our Newsletter </h3>
+                    </div>
+                    <div>
+                        <input type="text" id="hmi1" class="form-control" placeholder="Name">
+                        <input type="email" id="hmi2" class="form-control" placeholder="Your Email" required>
+                        <button type="submit" id="hmModal-submit">Subscribe</button>
+                        
+                        <h3 id="appendresult"></h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--main contents here-->
+
+            <div class="home-2">
+                <img src="./images/home-truck.jpg" alt="">
+                <div class="home2-text">
+                    <h1>Online truck booking made easy</h1>
+                </div>
+                <div class="home2-cname">
+                    <h1>ATTC Logistics</h1>
+                </div>
+
+                <div class="home2-form">
+
+                    <select name="" id="home2-ddown1" class="home2-finput">
+                        <option value="ahm">Ahmedabad</option>
+                        <option value="bar">Baroda</option>
+                        <option value="sur">Surat</option>
+                        <option value="raj">Rajkot</option>
+                    </select>
+
+                    <select name="" id="home2-ddown2" class="home2-finput">
+                        <option value="ahm">Ahmedabad</option>
+                        <option value="bar">Baroda</option>
+                        <option value="sur">Surat</option>
+                        <option value="raj">Rajkot</option>
+                    </select>
+
+                    <select name="" id="home2-ddown3" class="home2-finput">
+                        <option value="15">Eicher 14 Feet</option>
+                        <option value="20">CONTAINER 20 FT</option>
+                        <option value="32">CONTAINER 32 FT MXL</option>
+                        <option value="40">CONTAINER 32 FT SXL</option>
+                        <option value="50">CONTAINER 32 FT SXL / MXL HQ</option>
+                    </select>
+
+
+                    <button type="submit" id="home2-submit" class="home2-finput">Check Fare</button>
+
+                </div>
+                <h1 id="fareresult"></h1>
+
+
+            </div>
+
+
+            <div class="home-3">
+
+
+            </div>
+            <div class="home-4">
+                <div id="home4-marquee">
+                    <marquee behavior="scroll" direction="left">
+                        <img src="images/lt.jpg" alt="" id="mi1" height="50px" width="100px" style="margin-right: 10px">
+                        <img src="images/safex.jpg" id="mi2" alt="" height="50px" width="100px">
+                        <img src="images/meeka.jpg" id="mi3" height="50px" width="200px" alt="">
+                        <img src="images/shree.png" id="mi4" height="50px" width="100px" alt="">
+
+                    </marquee>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div class="footer-up">
+                <div class="fup-1">
+                    <h3>ABOUT OUR COMPANY</h3>
+                    <p>We are leading transport and logistics service provider, introducing a truly innovative, modern and high-tech online platform to book a truck in simple steps.</p>
+                </div>
+                <div class="fup-2">
+                    <h3>Quick Links</h3>
+                    <ul class="quicklinks">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="bulkinquiry.html">Bulk Inquiry</a>
+                        </li>
+                        <li>
+                            <a href="trucktype.html">Truck Type</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fup-3">
+                    <h3>Our Services</h3>
+                    <ul class="quicklinks">
+                        <li>Online Truck Booking</li>
+                        <li>Logistics Services</li>
+                        <li>Transportation Services</li>
+                        <li>Packers & Movers</li>
+                        <li>Express Cargo Services</li>
+                        <li>Freight Forwarding</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <button class="open-button" id="btnopen"><i class="fas fa-inbox"></i></button>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container" id="vaform">
+            <div class="va-header">
+                <h6 id="vah">
+                    <center>please fill out this form, we will contact you soon.</center>
+                </h6>
+            </div>
+            <div class="va-body">
+                <label for="contactname"><b>Name:</b></label>
+                <input type="text" placeholder="Enter your name" name="contactname" id="vaname" class="vafield" required>
+
+                <label for="companyname"><b>Company name:</b></label>
+                <input type="text" placeholder="your company name" name="companyname" id="vacname" class="vafield" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="vaemail" class="vafield" required>
+
+                <!--
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+-->
+
+                <button type="submit" class="btn" id="vasubmit">Submit</button>
+                <button type="button" class="btn cancel" id="btnclose">Close</button>
+            </div>
+
+
+        </form>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

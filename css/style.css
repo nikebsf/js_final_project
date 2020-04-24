@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr {
+    border: 1px solid black;
+    width: 80%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+
+
+    width: 80;
+    margin-left: auto;
+    margin-right: auto;
+    /*    border: 1px solid red;*/
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /*    border: 1px solid green;*/
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    box-shadow: 0px 3px 10px black;
+    margin-bottom: 1em;
+}
+
+.nav-logo {
+    flex: 1;
+    text-shadow: 1px 3px gray;
+}
+
+.nav-links {
+
+    flex: 2;
+
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.nav-links ul li {
+    flex: 1;
+    text-align: center;
+
+}
+
+.home-2 {
+    border: blue;
+    height: auto;
+    width: auto;
+}
+
+.home-2 img {
+    height: auto;
+    width: 100%;
+}
+
+.home2-text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%;
+}
+
+.home2-cname {
+    position: absolute;
+    z-index: 700;
+    margin: 0 auto;
+    left: 18%;
+    top: 70%;
+    color: white;
+    text-shadow: 1px 2px lightblue;
+}
+
+.home2-form {
+    margin: 5px auto 5px auto;
+    height: auto;
+    width: auto;
+    /*    border: 1px solid green;*/
+    display: flex;
+    flex-direction: row;
+}
+
+/*.home2-form2{
+    display: flex;
+    flex-direction: column;
+}*/
+
+.home2-finput {
+    flex: 1;
+    margin: 2%;
+    padding: 3px;
+    border: 2px solid;
+    width: 20%;
+    height: 50px;
+
+}
+
+/*#form-input1, #form-input2, #form-input3{
+    flex: 1;
+}*/
+#fareresult {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.footer-up {
+    display: flex;
+    flex-direction: row;
+}
+
+.fup-1 {
+    flex: 2;
+}
+
+.fup-2,
+.fup-3 {
+    flex: 1;
+}
+
+
+.quicklinks {
+    list-style-type: none;
+}
+.bif-body{
+    
+    
+}
+.bif-body form{
+    display: flex;
+    flex-direction: column;
+}
+.bif-body input,textarea{
+    flex: 1;
+    width: 60%;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+}
+#bif-btn,#required{
+    align-self: center;
+}
+#bif-btnbody {
+	box-shadow:inset 0px -19px 9px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:7px;
+	border:3px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	font-style:italic;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+#bif-btnbody:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+#bif-btnbody:active {
+	position:relative;
+	top:1px;
+}
+#loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+
+
+
+
+
+.cform{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cf-1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}   
+.cf-2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#address{
+    flex: 1;
+}
+#map{
+    flex: 4;
+}
+.cf-1 h3,input{
+    flex: 1;
+    width: 75%;
+      margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+}
+#sendM {
+	box-shadow:inset 0px -19px 9px 0px #ffffff;
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color:#f9f9f9;
+	border-radius:7px;
+	border:3px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	font-style:italic;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+}
+#sendM:hover {
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color:#e9e9e9;
+}
+#sendM:active {
+	position:relative;
+	top:1px;
+}
